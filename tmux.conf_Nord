@@ -1,0 +1,19 @@
+#set status-utf8 on
+#set utf8 on
+
+set -g default-terminal "screen-256color"
+set-option -g status-left-length 18
+set -g status-left "#[bg="red,bold"]#(echo 'Try Harder!! ')"
+set -g prefix C-a
+set -g status-right '#{prefix_highlight} | %a %Y-%m-%d %H:%M'
+
+set -g status-fg white
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+#set -g @plugin 'dracula/tmux'  
+#set -g @plugin "arcticicestudio/nord-tmux"
+
+run -b '~/.tmux/plugins/tpm/tpm'
