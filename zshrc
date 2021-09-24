@@ -8,8 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="jonoathan"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="jonoathan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -194,7 +194,9 @@ alias _='sudo'
 alias _i='sudo -i'
 alias please='sudo'
 alias fucking='sudo'
-alias vim='nvim'
-alias pcat='source ~/.pwncat-env/bin/activate'
+#alias vim='nvim'
+alias open='xdg-open '
+alias enum4linux="source .e4l/bin/activate && printf 'Use command enum4linux-ng'"
+alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat"'
 tmux
 clear
