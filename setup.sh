@@ -11,15 +11,13 @@ sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
 # Installing oh my zsh
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
+cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
+
 # Installing ngrok & Setting up ngrok
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip ~/Downloads/ngrok.zip && unzip ngrok.zip && mv ngrok /opt/tools && /opt/tools/ngrok authtoken 1y0B7x8qTnxaprDllSzMKQ0SyzQ_7uudCLb3rmgwFiXjMj9cq
 
 #Git installation
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-git clone https://github.com/danielmiessler/SecLists.git /opt/tools/SecLists
-
-git clone https://github.com/SpiderLabs/Responder.git /opt/tools/Responder
 
 git clone https://github.com/openwall/john.git /opt/tools/John
 
