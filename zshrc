@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -188,16 +188,19 @@ alias cmount='sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/ -o subtype=vmhgfs-fuse,all
 alias h='sudo python3 -m http.server'
 alias ih='ip a show tun0 | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" && h'
 alias c='clear'
-alias l='ls -l'
-alias ll='ls -lA'
+alias l='exa -l'
+alias tree='exa -TGl --icons'
+alias ll='exa -la --icons'
 alias dd='dd status=progress'
 alias _='sudo'
 alias _i='sudo -i'
 alias please='sudo'
+alias vpn='sudo openvpn $HOME/Downloads/W0lf3.ovpn'
 alias fucking='sudo'
+alias wb='feroxbuster'
 alias updater='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
 alias open='xdg-open '
-alias enum4linux="source .e4l/bin/activate && printf 'Use command enum4linux-ng'"
+alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
 alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat"'
 tmux
 clear
