@@ -23,6 +23,8 @@ git clone https://github.com/openwall/john.git /opt/tools/John
 
 git clone https://github.com/calebstewart/pwncat.git /opt/tools/pwncat
 
+https://github.com/cddmp/enum4linux-ng.git /opt/tools/enum4linux-ng
+
 # Installing pwncat on a virtual evn
 python3 -m venv ~/.pwncat-env;
 source ~/.pwncat-env/bin/activate;
