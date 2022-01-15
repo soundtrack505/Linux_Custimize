@@ -5,6 +5,7 @@ sudo apt update && curl -fsSL https://download.docker.com/linux/debian/gpg | sud
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
+cp tmux.conf ~/.tmux.conf
 
 # Making opt writable for me
 sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
