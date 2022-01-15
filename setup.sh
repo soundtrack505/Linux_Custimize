@@ -11,7 +11,7 @@ cp tmux.conf ~/.tmux.conf
 sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
 
 # Installing oh my zsh
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
