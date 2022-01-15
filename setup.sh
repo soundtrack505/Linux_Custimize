@@ -23,7 +23,11 @@ git clone https://github.com/openwall/john.git /opt/tools/John
 
 git clone https://github.com/calebstewart/pwncat.git /opt/tools/pwncat
 
-https://github.com/cddmp/enum4linux-ng.git /opt/tools/enum4linux-ng
+git clone https://github.com/cddmp/enum4linux-ng.git /opt/tools/enum4linux-ng
+
+git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
+
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
 
 # Installing pwncat on a virtual evn
 python3 -m venv ~/.pwncat-env;
