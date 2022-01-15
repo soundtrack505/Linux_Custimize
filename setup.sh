@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl
+sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl wget python3-dev sqlmap wireshark \
+       metasploit-framework nmap  -y
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
