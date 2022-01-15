@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux
+sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
@@ -32,7 +32,7 @@ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas
 # Installing pwncat on a virtual evn
 python3 -m venv ~/.pwncat-env;
 source ~/.pwncat-env/bin/activate;
-python3 /opt/tools/pwncat/setup.py install;
+pip3 install pwncat-cs
 
 deactivate
 
