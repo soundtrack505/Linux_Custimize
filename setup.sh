@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl wget python3-dev sqlmap wireshark \
-       metasploit-framework nmap  -y
+       metasploit-framework nmap docker.io -y
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
@@ -36,5 +36,8 @@ source ~/.pwncat-env/bin/activate;
 pip3 install pwncat-cs
 
 deactivate
+
+# Downloading rustscan using docker:
+sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0
 
 printf "Don't forget to press Prefix -> I to download tmux"
