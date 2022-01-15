@@ -32,4 +32,4 @@ python3 /opt/tools/pwncat/setup.py install;
 
 deactivate
 
-printf "Don't forget to press Prefix+I to download tmux"
+printf "Don't forget to press Prefix -> I to download tmux"
