@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl wget python3-dev sqlmap wireshark \
+sudo apt update && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl wget python3-dev sqlmap wireshark \
        metasploit-framework nmap  -y
 
 # Setting up zshrc
