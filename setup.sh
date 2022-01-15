@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster
+sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
