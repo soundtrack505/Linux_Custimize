@@ -204,6 +204,6 @@ alias updater='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgr
 alias open='xdg-open '
 alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
 alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat"'
-# alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
+alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 tmux
 clear
