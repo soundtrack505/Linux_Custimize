@@ -35,7 +35,7 @@ curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas
 
 # Installing pwncat on a virtual evn
 python3 -m venv ~/.pwncat-env;
-source ~/.pwncat-env/bin/activate;
+source ~/.pwncat/bin/activate;
 pip3 install pwncat-cs
 
 deactivate
