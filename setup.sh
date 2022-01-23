@@ -3,15 +3,17 @@
 sudo apt update && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster tmux curl wget python3-dev sqlmap wireshark \
        metasploit-framework zsh zsh-autosuggestions zsh-syntax-highlighting nmap docker.io aircrack-ng john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire exploitdb -y
 
+
+# Installing oh my zsh
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+
+
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
 cp tmux.conf ~/.tmux.conf
 
 # Making opt writable for me
 sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
-
-# Installing oh my zsh
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
