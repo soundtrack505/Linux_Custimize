@@ -16,7 +16,7 @@ curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
 # Installing ngrok & Setting up ngrok
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -o ~/Downloads/ngrok.zip && sleep 30 && unzip ~/Downloads/ngrok.zip && mv ~/Downloads/ngrok /opt/tools && chmod +x /opt/tools/ngrok && /opt/tools/ngrok authtoken 1y0B7x8qTnxaprDllSzMKQ0SyzQ_7uudCLb3rmgwFiXjMj9cq
+curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -o /tmp/ngrok.zip && sleep 30 && unzip /tmp/ngrok.zip && mv /tmp/ngrok /opt/tools && chmod +x /opt/tools/ngrok && /opt/tools/ngrok authtoken 1y0B7x8qTnxaprDllSzMKQ0SyzQ_7uudCLb3rmgwFiXjMj9cq
 
 #Git installation
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
