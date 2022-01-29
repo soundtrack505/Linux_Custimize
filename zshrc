@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/go/bin:/home/soundtrack/.local/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -203,7 +203,7 @@ alias wb='feroxbuster'
 alias updater='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
 alias open='xdg-open '
 alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
-alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat"'
+alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat-cs"'
 alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 alias powershell='pwsh'
 tmux
