@@ -16,6 +16,7 @@ cp tmux.conf ~/.tmux.conf
 sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
 
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
+cp shells /opt/tools
 
 # Installing ngrok & Setting up ngrok
 curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -o /tmp/ngrok.zip && sleep 30 && unzip /tmp/ngrok.zip && mv /tmp/ngrok /opt/tools && chmod +x /opt/tools/ngrok && /opt/tools/ngrok authtoken 1y0B7x8qTnxaprDllSzMKQ0SyzQ_7uudCLb3rmgwFiXjMj9cq
