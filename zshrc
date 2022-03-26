@@ -205,6 +205,7 @@ alias open='xdg-open '
 alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
 alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat-cs"'
 # alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:2.0.0'
+alias rustscan='/bin/rustscan'
 alias powershell='pwsh'
 alias shells='cat /opt/tools/shells'
 tmux
