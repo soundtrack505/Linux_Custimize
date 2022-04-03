@@ -207,6 +207,7 @@ alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat-cs"'
 # alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:2.0.0'
 alias rustscan='/bin/rustscan'
 alias powershell='pwsh'
-alias shells='cat /opt/tools/shells'
+alias monitor_mode='sudo ip link set wlan0 down; sudo iw wlan0 set monitor none; sudo ip link set wlan0 up'
+alias managed_mode='sudo ip link set wlan0 down; sudo iw wlan0 set type managed; sudo ip link set wlan0 up'
 tmux
 clear
