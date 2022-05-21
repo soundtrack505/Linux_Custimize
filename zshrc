@@ -8,8 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="soundtrack"
-#ZSH_THEME="jonoathan"
+# ZSH_THEME="soundtrack"
+ZSH_THEME="random-emoji"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -209,5 +209,7 @@ alias rustscan='/bin/rustscan'
 alias powershell='pwsh'
 alias monitor_mode='sudo ip link set wlan0 down; sudo iw wlan0 set monitor none; sudo ip link set wlan0 up'
 alias managed_mode='sudo ip link set wlan0 down; sudo iw wlan0 set type managed; sudo ip link set wlan0 up'
+alias install='sudo apt install'
+alias search='sudo apt-cache search'
 tmux
 clear
