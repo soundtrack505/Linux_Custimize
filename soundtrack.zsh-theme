@@ -6,7 +6,7 @@ function random_emoji {
   echo -n "$EMOJI[$RANDOM%$#EMOJI+1] "
 }
 
-PROMPT='%{$reset_color%}%{$fg[red]%}┌──$(whoami)%{$reset_color%}@%{$fg[yellow]%}$(hostname)-%{$fg[cyan]%}[$(pwd)]%{$reset_color%}$
+PROMPT='%{$reset_color%}%{$fg[red]%}a┌──$(whoami)%{$reset_color%}@%{$fg[yellow]%}$(hostname)-%{$fg[cyan]%}[$(pwd)]%{$reset_color%}$
 $(git_prompt_info)'
 PROMPT+="└─$(random_emoji)%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 
