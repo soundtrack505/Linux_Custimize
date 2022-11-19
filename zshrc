@@ -117,6 +117,53 @@ bindkey '^H' backward-kill-word
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cdp="cd /mnt/c/Users/seash/Programming"
+alias ls='ls -l --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias cmount='sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/ -o subtype=vmhgfs-fuse,allow_other'
+alias h='sudo python3 -m http.server'
+alias ih='ip a show tun0 | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" && h'
+alias smb1='echo "The share name is: share"; impacket-smbserver share '
+alias smb2='echo "The share name is: share"; impacket-smbserver -smb2support share '
+alias c='clear'
+alias l='exa -lg --icons'
+alias ll='exa -lag --icons'
+alias ls='exa -lg --icons'
+alias tree='exa --icons -GTlg'
+alias dd='dd status=progress'
+alias _='sudo'
+alias _i='sudo -i'
+alias please='sudo'
+alias vpn='sudo openvpn $HOME/Downloads/W0lf3.ovpn'
+alias fucking='sudo'
+alias wb='feroxbuster'
+alias updater='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
+alias open='xdg-open '
+alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
+alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat-cs"'
+# alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:2.0.0'
+alias rustscan='/bin/rustscan'
+alias responder='sudo python3.9 /usr/share/responder/Responder.py'
+alias monitor_mode='sudo ip link set wlan0 down; sudo iw wlan0 set monitor none; sudo ip link set wlan0 up'
+alias managed_mode='sudo ip link set wlan0 down; sudo iw wlan0 set type managed; sudo ip link set wlan0 up'
+alias install='sudo apt install'
+alias search='sudo apt-cache search'
+alias vim="nvim"
+alias nv="nvim"
+alias reset_dh="sudo dhclient -r && sudo dhclient"
+tmux
+clear
+
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
         . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -124,7 +171,7 @@ if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
         ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
                 fi
 # enable syntax-highlighting
-if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && [ "$color_prompt" = yes ]; then
+if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then # && [ "$color_prompt" = yes ]; then
         unsetopt ksharrays
         . /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
         ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
@@ -171,46 +218,3 @@ if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && [ "$
         ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 fi
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdp="cd /mnt/c/Users/seash/Programming"
-alias ls='ls -l --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-alias cmount='sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/ -o subtype=vmhgfs-fuse,allow_other'
-alias h='sudo python3 -m http.server'
-alias ih='ip a show tun0 | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" && h'
-alias smb1='echo "The share name is: share"; impacket-smbserver share '
-alias smb2='echo "The share name is: share"; impacket-smbserver -smb2support share '
-alias c='clear'
-alias l='exa -lg --icons'
-alias ll='exa -lag --icons'
-alias ls='exa -lg --icons'
-alias tree='exa --icons -GTlg'
-alias dd='dd status=progress'
-alias _='sudo'
-alias _i='sudo -i'
-alias please='sudo'
-alias vpn='sudo openvpn $HOME/Downloads/W0lf3.ovpn'
-alias fucking='sudo'
-alias wb='feroxbuster'
-alias updater='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
-alias open='xdg-open '
-alias enum4linux="python3 /opt/tools/enum4linux-ng/enum4linux-ng.py'"
-alias pcat='source ~/.pwncat/bin/activate && printf "Use command pwncat-cs"'
-# alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:2.0.0'
-alias rustscan='/bin/rustscan'
-alias powershell='pwsh'
-alias monitor_mode='sudo ip link set wlan0 down; sudo iw wlan0 set monitor none; sudo ip link set wlan0 up'
-alias managed_mode='sudo ip link set wlan0 down; sudo iw wlan0 set type managed; sudo ip link set wlan0 up'
-alias install='sudo apt install'
-alias search='sudo apt-cache search'
-tmux
-clear
