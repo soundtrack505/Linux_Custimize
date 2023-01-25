@@ -161,7 +161,6 @@ alias search='sudo apt-cache search'
 alias vim="nvim"
 alias nv="nvim"
 alias reset_dh="sudo dhclient -r && sudo dhclient"
-alias which="alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde"
 tmux
 clear
 
