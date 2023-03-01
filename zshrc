@@ -160,7 +160,7 @@ alias install='sudo apt install'
 alias search='sudo apt-cache search'
 alias vim="nvim"
 alias nv="nvim"
-alias reset_dh="sudo dhclient -r && sudo dhclient"
+alias reset_dh="sudo dhclient -r && sudo dhclient && source ~/.zshrc"
 tmux
 clear
 
