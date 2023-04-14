@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt update && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
-       metasploit-framework ncdu vim zsh zsh-autosuggestions zsh-syntax-highlighting nmap docker.io aircrack-ng john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire exploitdb -y
+sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
+       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire exploitdb -y
 
 
 # Installing oh my zsh
@@ -26,8 +26,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 git clone https://github.com/openwall/john.git /opt/tools/John
 
-git clone https://github.com/calebstewart/pwncat.git /opt/tools/pwncat
-
 git clone https://github.com/cddmp/enum4linux-ng.git /opt/tools/enum4linux-ng
 
 git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
@@ -35,13 +33,11 @@ git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
 
 # Installing pwncat on a virtual evn
-python3 -m venv ~/.pwncat-env;
+mkdir ~/.pwncat
+python3 -m venv ~/.pwncat;
 source ~/.pwncat/bin/activate;
 pip3 install pwncat-cs
 
 deactivate
-
-# Downloading rustscan using docker:
-sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0
 
 printf "Don't forget to press Prefix -> I to download tmux"
