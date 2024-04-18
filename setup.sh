@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt install python3-pip python3-venv xclip eza rustscan feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
-       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshutle -y
+       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshuttle -y
 
 
 # Installing oh my zsh
