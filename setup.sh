@@ -1,12 +1,11 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install python3-pip python3-venv xclip exa feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
-       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire exploitdb -y
+sudo apt update && sudo apt install python3-pip python3-venv xclip eza rustscan feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
+       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshutle -y
 
 
 # Installing oh my zsh
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
-
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
@@ -17,9 +16,6 @@ sudo chown $(whoami):$(whoami) /opt && mkdir /opt/tools
 
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 cp shells /opt/tools
-
-# Installing ngrok & Setting up ngrok
-curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -o /tmp/ngrok.zip && sleep 30 && unzip /tmp/ngrok.zip && mv /tmp/ngrok /opt/tools && chmod +x /opt/tools/ngrok && /opt/tools/ngrok authtoken 1y0B7x8qTnxaprDllSzMKQ0SyzQ_7uudCLb3rmgwFiXjMj9cq
 
 #Git installation
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
