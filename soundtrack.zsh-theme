@@ -1,10 +1,7 @@
 # zsh
 
-EMOJI=(👻 💀 ☠️  👽 👾 🤖 🥷)
-
-function random_emoji {
-  echo -n "$EMOJI[$RANDOM%$#EMOJI+1] "
-}
+EMOJI=(👾)
+HACKER="Be A Hacker Try Harder"
 
 function home_tilda() {
 	home=$(echo $HOME);
@@ -18,7 +15,7 @@ function home_tilda() {
 
 get_ips=$(ip -4 addr | grep -v "172.17" | grep -v '127.0.0.1'| grep -v 'secondery' | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | sed -z 's/\n/|/g;s/|\$/\n/' | rev | cut -c 2- | rev)
 
-PROMPT='%{$reset_color%}%{$fg[red]%}┌───($get_ips) - $(whoami)%{$reset_color%} ✗ %{$fg[yellow]%}$(hostname) - $(random_emoji)%{$reset_color%}
+PROMPT='%{$reset_color%}%{$fg[red]%}┌───($get_ips) - $(whoami)%{$reset_color%} ✗ %{$fg[yellow]%}$(hostname) - $HACKER - $EMOJI)%{$reset_color%}
 %{$reset_color%}%{$fg[red]%}└─%{$reset_color%}%{$fg[cyan]%}[$(home_tilda)]%{$reset_color%}
 '
 PROMPT+="%(?:%{$fg_bold[green]%}⋊> :%{$fg_bold[red]%}⋊> )%{$reset_color%}"
