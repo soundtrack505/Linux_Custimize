@@ -17,6 +17,10 @@ git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
 
 
+sudo apt update && sudo apt install python2.7
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /tmp/get-pip.py
+sudo python2.7 /tmp/get-pip.py
+
 
 # Installing oh my zsh
 sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
