@@ -21,11 +21,6 @@ sudo apt update && sudo apt install python2.7
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /tmp/get-pip.py
 sudo python2.7 /tmp/get-pip.py
 
-
-# Installing oh my zsh
-sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
 # Download Hack font
 mkdir ~/.local/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip -O /tmp/Hack.zip
@@ -50,5 +45,9 @@ source ~/.pwncat/bin/activate;
 pip3 install pwncat-cs
 
 deactivate
+
+# Installing oh my zsh
+sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 printf "Don't forget to press Prefix -> I to download tmux"
