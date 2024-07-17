@@ -12,6 +12,10 @@ git clone https://github.com/openwall/john.git /opt/tools/John
 
 git clone https://github.com/cddmp/enum4linux-ng.git /opt/tools/enum4linux-ng
 
+git clone https://github.com/RevoltSecurities/SubProber.git /opt/tools/SubProber
+
+git clone https://github.com/p0dalirius/smbclient-ng.git /opt/tools/smbclient-ng
+
 git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
 
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
