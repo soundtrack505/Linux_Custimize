@@ -18,6 +18,8 @@ git clone https://github.com/p0dalirius/smbclient-ng.git /opt/tools/smbclient-ng
 
 git clone https://github.com/carlospolop/PEASS-ng.git /opt/tools/PEASS-ng
 
+git clone https://github.com/nicocha30/ligolo-ng.git /opt/tools/ligolo-ng
+
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
 
 
