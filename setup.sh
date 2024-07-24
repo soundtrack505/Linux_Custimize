@@ -43,6 +43,7 @@ cp tmux.conf ~/.tmux.conf
 
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
+pip3 install certipy-ad
 
 # Installing pwncat on a virtual evn
 mkdir ~/.pwncat
