@@ -33,7 +33,7 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip -
 
 
 # Installing tools 
-sudo apt update && sudo apt install python3-pip python3-venv xclip eza rustscan feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
+sudo apt update && sudo apt install python3-pip python3-venv python3-libtmux xclip eza rustscan feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
        metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshuttle -y
 
 # Setting up zshrc
