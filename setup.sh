@@ -29,21 +29,22 @@ sudo python2.7 /tmp/get-pip.py
 
 # Download Hack font
 mkdir ~/.local/share/fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip -O /tmp/Hack.zip
-
-
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip -O ~/.local/share/fonts/Hack.zip
+cd ~/.local/share/fonts
+unzip ~/.local/share/fonts/Hack.zip
+rm Hack.zip
+cd ~
 
 
 # Installing tools 
-sudo apt update && sudo apt install python3-pip python3-venv python3-libtmux xclip eza rustscan feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
-       metasploit-framework neovim zsh-autosuggestions zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshuttle -y
+sudo apt update && sudo apt install python3-pip python3-venv python3-libtmux xclip eza feroxbuster terminator tmux curl wget python3-dev sqlmap wireshark \
+       metasploit-framework neovim zsh-autosuggestions neovim zsh-syntax-highlighting nmap john powersploit hashcat hydra impacket-scripts crackmapexec powershell-empire starkiller exploitdb sshuttle -y
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Setting up zshrc
 rm ~/.zshrc && cp zshrc ~/.zshrc
 cp tmux.conf ~/.tmux.conf
-
-
-cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
 pip3 install certipy-ad
 
@@ -58,5 +59,8 @@ deactivate
 # Installing oh my zsh
 sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
 
+printf "Open nvim and run :PlugInstall"
+printf "Need to download rustscan https://github.com/bee-san/RustScan"
 printf "Don't forget to press Prefix -> I to download tmux"
