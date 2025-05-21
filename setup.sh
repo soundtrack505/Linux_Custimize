@@ -64,6 +64,11 @@ unzip ~/.local/share/fonts/Hack.zip
 rm Hack.zip
 cd ~
 
+# install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+
+
+
 printf "Open nvim and run :PlugInstall"
 printf "Need to download rustscan https://github.com/bee-san/RustScan"
 printf "Don't forget to press Prefix -> I to download tmux"
