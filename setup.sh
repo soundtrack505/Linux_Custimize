@@ -36,11 +36,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir ~/.config/nvim/
 cp nvim.init ~/.config/nvim/
 
-
-# Setting up zshrc
-rm ~/.zshrc && cp zshrc ~/.zshrc
-cp tmux.conf ~/.tmux.conf
-
 pip3 install certipy-ad
 
 # Installing pwncat on a virtual evn
@@ -54,7 +49,11 @@ deactivate
 # Installing oh my zsh
 sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+# Setting up zshrc
 cp soundtrack.zsh-theme ~/.oh-my-zsh/themes/
+rm ~/.zshrc && cp zshrc ~/.zshrc
+cp tmux.conf ~/.tmux.conf
 
 # Download Hack font
 mkdir ~/.local/share/fonts
@@ -70,6 +69,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 cp p10k.zsh ~/.p10k.zsh
 
 
-printf "Open nvim and run :PlugInstall"
-printf "Need to download rustscan https://github.com/bee-san/RustScan"
-printf "Don't forget to press Prefix -> I to download tmux"
+printf "\nOpen nvim and run :PlugInstall\n"
+printf "Need to download rustscan https://github.com/bee-san/RustScan\n"
+printf "Don't forget to press Prefix -> I to download tmux\n"
