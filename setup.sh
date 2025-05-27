@@ -23,7 +23,7 @@ git clone https://github.com/nicocha30/ligolo-ng.git /opt/tools/ligolo-ng
 curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o /opt/tools/PEASS-ng/linPEAS/linpeas.sh
 
 
-sudo apt update && sudo apt install python2.7
+sudo apt update && sudo apt install python2.7 -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /tmp/get-pip.py
 sudo python2.7 /tmp/get-pip.py
 
